@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Spanish Inquisition Art Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Spanish Inquisition</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center animate__animated animate__fadeIn">Spanish Inquisition Art Gallery</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/1200px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg" class="card-img-top" alt="The Third of May 1808" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">The Third of May 1808</h5>
+                        <p class="card-text">A vivid depiction of the horrors of execution during Spain's darkest hours.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/640px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg" class="card-img-top" alt="Francisco de Goya, Saturno devorando a su hijo" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">Francisco de Goya, Saturno devorando a su hijo (1819-1823)</h5>
+                        <p class="card-text">Haunting work by Goya reflecting his somber view of human suffering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_%28No._43%29%2C_from_Los_Caprichos_-_Google_Art_Project.jpg/220px-Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_The_sleep_of_reason_produces_monsters_%28No._43%29%2C_from_Los_Caprichos_-_Google_Art_Project.jpg" class="card-img-top" alt="El sueño de la razón produce monstruos" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">El sueño de la razón produce monstruos</h5>
+                        <p class="card-text">Los Caprichos is a series of 80 etchings published in 1799 wherein Goya criticized the rampant political, social, and religious abuses of the time period.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Christ_in_Gethsemane.jpg/427px-Christ_in_Gethsemane.jpg" class="card-img-top" alt="Christ in Gethsemane" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">Christ in Gethsemane</h5>
+                        <p class="card-text">A dramatic depiction of Christ’s agony in the Garden of Gethsemane.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Execution_of_Louis_XVI.jpg" class="card-img-top" alt="Execution of Louis XVI" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">Execution of Louis XVI</h5>
+                        <p class="card-text">An iconic moment of the French Revolution, showing the grim fate of the king.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Rubens_-_Massacre_of_the_Innocents_-_Art_Gallery_of_Ontario_2.jpg" class="card-img-top" alt="Massacre of the Innocents" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">Massacre of the Innocents</h5>
+                        <p class="card-text">A dramatic and tragic depiction by Rubens, showing the horrors of the Massacre of the Innocents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Enlarged Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Enlarged Art Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Spanish Inquisition Art Gallery</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
